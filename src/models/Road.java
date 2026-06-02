@@ -23,6 +23,6 @@ public class Road {
 
     @Override
     public String  toString(){
-        return "Distance KM : " + distance +" "+ "DestinationCity : " + destinationCity  ;
+        return "Distance KM : " + distance +" "+ destinationCity  ;
     }
 }

@@ -52,3 +52,26 @@ public class Graph {
         }
     }
 }
+ class Main {
+
+    public static void main(String[] args) {
+
+        Graph graph = new Graph();
+
+        Location lahore = new Location(1, "Lahore");
+        Location islamabad = new Location(2, "Islamabad");
+        Location multan = new Location(3, "Multan");
+        Location karachi = new Location(4, "Karachi");
+
+        graph.addLocation(lahore);
+        graph.addLocation(islamabad);
+        graph.addLocation(multan);
+        graph.addLocation(karachi);
+
+        graph.addRoad(lahore, islamabad, 380);
+        graph.addRoad(lahore, multan, 340);
+        graph.addRoad(multan, karachi, 900);
+
+        graph.printGraph();
+    }
+}

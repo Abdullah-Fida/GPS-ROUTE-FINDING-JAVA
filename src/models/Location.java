@@ -4,7 +4,7 @@ public class Location {
     private String locationName;
     private int id;
 
-    Location(String locationName , int id){
+    Location(int id , String locationName  ){
         this.locationName = locationName;
         this.id = id;
     }
@@ -21,4 +21,8 @@ public class Location {
     public String toString(){
         return "LocationName : " + locationName + " ID :" + id;
     }
+
+
 }
+
+
