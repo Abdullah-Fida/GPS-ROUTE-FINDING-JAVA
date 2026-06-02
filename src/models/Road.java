@@ -3,11 +3,11 @@ package models;
 import javax.print.attribute.standard.Destination;
 
 public class Road {
-    Location socurceCity;
+
     Location destinationCity;
     double distance;
 
-    Road(Location destinationCity , double distance , Location socurceCity){
+    Road(Location destinationCity , double distance ){
         this.destinationCity = destinationCity;
         this.distance = distance;
     }
@@ -20,12 +20,9 @@ public class Road {
         return destinationCity;
     }
 
-    public Location getSocurceCity() {
-        return socurceCity;
-    }
 
     @Override
     public String  toString(){
-        return"Soucrce City : " + socurceCity+  " " +"Distance KM : " + distance +" "+ "DestinationCity : " + destinationCity  ;
+        return "Distance KM : " + distance +" "+ "DestinationCity : " + destinationCity  ;
     }
 }
