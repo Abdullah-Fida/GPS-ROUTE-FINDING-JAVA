@@ -4,7 +4,7 @@ public class Location {
     private String locationName;
     private int id;
 
-    Location(int id , String locationName  ){
+    public Location(int id, String locationName){
         this.locationName = locationName;
         this.id = id;
     }
